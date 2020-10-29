@@ -9,14 +9,14 @@ const SignupForm = () => {
   let [email,setEmail] = useState('')
   let [mobile,setMobile] = useState('')
   let [profession,setProfession] = useState("Software Engineer")
-  
+
   const signup =(e) => {
     e.preventDefault()
     if(name==='' ||  pass==='' || email==='' || mobile==='' || profession==='') {
       alert("Please fill all fields")
       return
     }
-    CacheManager.setAll({name,mobile,pass,email,profession})
+    CacheManager.setAll({name,mobile,pass,email,profession,isLogged:true})
     history.push('/')
   }
 

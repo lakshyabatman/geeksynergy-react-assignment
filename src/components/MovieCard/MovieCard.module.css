@@ -1,0 +1,18 @@
+.MovieCardBody {
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+}
+
+.voteContainer {
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  font-size:24px;
+}
+
+.movieImg {
+  height:300px;
+  margin-left:20px;
+  margin-right:20px;
+}

@@ -18,6 +18,10 @@ class CacheManager {
     localStorage.removeItem(key)
   }
 
+  isLogged() {
+    return this.get('isLogged') && this.get('name') && this.get('pass')
+  }
+
 }
 
 export default  new CacheManager()

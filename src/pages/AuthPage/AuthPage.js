@@ -5,7 +5,7 @@ import SignupForm from '../../components/SignupForm/SignupForm'
 import CacheManager from '../../lib/localStorage'
 import classes from './AuthPage.module.css'
 const AuthPage = (props) => {
-    if(CacheManager.get('isLogged')===true) {
+    if(CacheManager.isLogged()) {
       return <Redirect to='/'/>
     }else {
 
